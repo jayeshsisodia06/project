@@ -12,6 +12,7 @@ class Welcome extends CI_Controller
 
     public function submitName()
     {
+		$this->load->database();
         $name = $this->input->post('name');
         $data = array(
             'name' => $name
